@@ -36,6 +36,13 @@ export const {
       4: '20px',
       5: '25px',
       6: '35px',
+      7: '50px',
+      8: '60px',
+      9: '70px',
+      10: '80px',
+      11: '100px',
+      12: '200px',
+      13: '300px'
     },
     sizes: {
       1: '5px',
@@ -51,11 +58,14 @@ export const {
       3: '15px',
       4: '17px',
       5: '19px',
-      6: '21px',
+      6: '21px'
     },
     fonts: {
       system: 'system-ui',
     },
+    height: {
+      10: '100px'
+    }
   },
   utils: {
     marginX: (value: Stitches.PropertyValue<'margin'>) => ({
@@ -74,9 +84,11 @@ export const {
       paddingTop: value,
       paddingBottom: value,
     }),
+
   },
   media: {
-    bp1: '(min-width: 520px)',
-    bp2: '(min-width: 900px)',
+    bp1: '(max-width: 480px)',
+    bp2: '(max-width: 912px)',
+    bp3: '(min-width: 913px)',
   },
 })

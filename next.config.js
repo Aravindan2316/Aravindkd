@@ -1,6 +1,8 @@
 /** @type {import('next').NextConfig} */
-const nextConfig = {
+module.exports = {
+  images: {
+    domains: ['pyt-images.imgix.net']
+  },
   reactStrictMode: true,
+  swcMinify: true
 }
-
-module.exports = nextConfig
